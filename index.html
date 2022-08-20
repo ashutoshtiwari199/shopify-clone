@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopify</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+              sm: '480px',
+              md: '768px',
+              lg: '976px',
+              xl: '1440px'
+            },
+            extend: {
+              colors: {
+                shopifygreen: '#004C3F',
+                offwhite:'#f1f1f1',
+                darkblue: '#002970',
+                gradientblack: 'linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 29%, hsla(0, 0%, 31%, 1) 99%)'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <section class="bg-shopifygreen" >
+        <!-- <img src="./assets/Shopify-Logo.png" alt=""> -->
+        <nav class="h-16 bg-offwhite bg-shopifygreen container-fluid px-0 sm:px-20 w-[100vw] flex justify-between items-center " >
+            <div class="logo w-2/12 sm:w-1/12 bg-shopifygreen">
+                <img src="./assets/Shopify-Logo.png" alt="">
+            </div>
+
+            <ul class="flex hidden sm:block text-zinc-700 justify-evenly items-center w-11/12 text-[1.2em]" >
+                <li>Start <i class="text-zinc-700 fa-solid fa-angle-down"></i></li>
+                <li>Sell <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
+                <li>Market <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
+                <li>Manage <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
+                <li class="ml-60" >Pricing</li>
+                <li>Learn <i class="fa-solid  fa-angle-down"></i></li>
+                <li>Login</li>
+                <li class="bg-shopifygreen p-1 rounded text-white" >Try for free</li>
+            </ul>
+            <li class="block sm:hidden bg-shopifygreen " >Login</li>
+            <i class="fa fa-bars bg-shopifygreen "></i>
+
+        </nav>
+    </section>
+
+</body>
+</html>
