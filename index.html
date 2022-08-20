@@ -24,6 +24,10 @@
               colors: {
                 shopifygreen: '#004C3F',
                 offwhite:'#f1f1f1',
+                myred:'#fc6b03',
+                textsecondarycolor:'#666666bb',
+                iconcolor:'#C1F0D0',
+                creamewhite:'#FBF7ED',
                 darkblue: '#002970',
                 gradientblack: 'linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 29%, hsla(0, 0%, 31%, 1) 99%)'
               }
@@ -32,30 +36,215 @@
         }
       </script>
 </head>
-<body>
+<body class="overflow-x-hidden">
     
     <section class="bg-shopifygreen" >
         <!-- <img src="./assets/Shopify-Logo.png" alt=""> -->
-        <nav class="h-16 bg-offwhite bg-shopifygreen container-fluid px-0 sm:px-20 w-[100vw] flex justify-between items-center " >
-            <div class="logo w-2/12 sm:w-1/12 bg-shopifygreen">
+        <nav class="h-16 bg-offwhite container-fluid px-4 sm:px-20 w-[100vw] flex justify-between items-center " >
+            <div class="logo w-4/12 sm:w-1/12 ">
                 <img src="./assets/Shopify-Logo.png" alt="">
             </div>
-
-            <ul class="flex hidden sm:block text-zinc-700 justify-evenly items-center w-11/12 text-[1.2em]" >
+            <ul class="flex hidden sm:flex flex-row text-zinc-700 justify-evenly items-center w-11/12 text-[1.2em]" >
                 <li>Start <i class="text-zinc-700 fa-solid fa-angle-down"></i></li>
                 <li>Sell <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
                 <li>Market <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
                 <li>Manage <i class="fa-solid text-zinc-700 fa-angle-down"></i></li>
-                <li class="ml-60" >Pricing</li>
+                <li class="ml-60 xl:ml-[50%]" >Pricing</li>
                 <li>Learn <i class="fa-solid  fa-angle-down"></i></li>
                 <li>Login</li>
                 <li class="bg-shopifygreen p-1 rounded text-white" >Try for free</li>
             </ul>
-            <li class="block sm:hidden bg-shopifygreen " >Login</li>
-            <i class="fa fa-bars bg-shopifygreen "></i>
-
+            <li class="block sm:hidden  ml-[40%]" >Login</li>
+            <i class="fa fa-bars text-[24px] sm:hidden "></i>
         </nav>
     </section>
+
+
+<!-- section one -->
+
+<section>
+    <div class="xl:container lg:container-fluid  px-4 lg:px-20 xl:px-0 flex flex-col sm:flex-row justify-evenly 
+    mx-auto py-10">
+        <div class="left w-1/1  sm:w-1/2 flex flex-col justify-evenly lg:py-2 xl:py-10 bg-offwhite">
+            <h1 class=" text-3xl lg:text-4xl xl:text-5xl font-bold text-shopifygreen">The easiest way to sell <br> online in India</h1>
+            <p class=" text-1xl my-10 sm:my-4 text-[18px] lg:text-[18px] xl:text-2xl font-light w-11/12 sm:w-[90%]" >Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+            <div class="email-form flex flex-col justify-between sm:block">
+                <input type="email" class="border border-shopifygreen p-[1.2vh] my-4  lg:p-[.5vh] xl:p-2 w1/1 sm:w-2/3 rounded" 
+                placeholder="Enter your email address" >
+                <button class="bg-shopifygreen p-[1.2vh] font-bold mb-10  sm:text-1xl lg:p-1 xl:p-2 rounded text-white" >Try for free</button>
+            </div>
+
+            <p class="font-light text-[12px] lg:text-[14px] xl:text-[18px] xl:w-[80%] font-light ">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+        </div>
+        <div class="right w-1/1 my-10 sm:my-0 sm:w-1/2 flex justify-around bg-shopifygreen items-center">
+            <video autoplay src="./assets/inbrochurebannerv2.webm" class="" autoplay loop>
+            </video>
+        </div>
+    </div>
+</section>
+
+
+<!-- section -->
+
+<section>
+    <div class="container-fluid xl:container mx-auto bg-shopifygreen p-4 lg:p-20 xl:p-10">
+        <h1 class=" text-2xl lg:text-4xl text-white my-8" >Bring your business online</h1>
+        <p class="text-white" ><span>Create an ecommerce website backed by powerful tools 
+            that help you find customers, drive sales, and manage 
+            your day-to-day. </span> <span class=" xl:ml-60 my-8 sm:my-4 block lg:block xl:inline" >Explore more example &#x2192</span> </p>
+
+        <div class="cards grid grid-cols-2 lg:grid-cols-5 gap-2 ">
+            <div class="card h-[42vh] lg:h-[55vh]  bg-cover xl:h-[47vh]  my-10 text-white  bg-myred bg-no-repeat bg-[url('https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpg')]">
+                <h2 class="relative top-[101%]" >Food & Drinks</h2>
+                <h5 class="relative top-[101%]">Blue Tokai</h5>
+            </div>
+
+            <div class="card h-[42vh] lg:h-[55vh] bg-cover xl:h-[47vh] flex-no-wrap  my-10 text-white  bg-myred bg-no-repeat bg-[url('https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg')]">
+                <h2 class="relative top-[101%]" >JEWELRY</h2>
+                <h5 class="relative top-[101%]">quirksmith</h5>
+            </div>
+
+            <div class="card h-[42vh] lg:h-[55vh] bg-cover xl:h-[47vh] flex-no-wrap my-10 text-white  bg-myred bg-no-repeat bg-[url('https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpg')]">
+                <h2 class="relative top-[101%]" >ELECTRONICS</h2>
+                <h5 class="relative top-[101%]">Crossbeats</h5>
+            </div>
+
+            <div class="card h-[42vh] lg:h-[55vh] bg-cover xl:h-[47vh] flex-no-wrap my-10 text-white  bg-myred bg-no-repeat bg-[url('https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpg')]">
+                <h2 class="relative top-[101%]" >BEAUTY</h2>
+                <h5 class="relative top-[101%]">Mcaffine</h5>
+            </div>
+
+            <div class="card h-[42vh] lg:h-[55vh] bg-cover xl:h-[47vh] hidden lg:block flex-no-wrap my-10 text-white  bg-myred bg-no-repeat bg-[url('https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-small-4575b175c798e22af5531bae02621396add507433f771db37b1515e9941f8a45.jpg')]">
+                <h2 class="relative top-[101%]" >FASHION</h2>
+                <h5 class="relative top-[101%]">Bunaai</h5>
+            </div>
+
+        </div>
+        <h1 class="mt-20 mb-10 text-2xl text-white " >Take the best path forward</h1>
+
+        <div class="down flex flex-col sm:flex-row justify-between">
+            <div class="cards mx-2 my-8 text-white">
+                <i class="fa-solid text-2xl text-iconcolor fa-store"></i>
+                <h2 class="my-2 text-[18px]" >Start an online business</h2>
+                <p>Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+            </div>
+
+            <div class="cards mx-2 my-8 text-white">
+                <i class="fa-solid text-2xl text-iconcolor fa-shop"></i>
+                <h2 class="my-2 text-[18px]" >Move your business online</h2>
+                <p>Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+            </div>
+
+            <div class="cards mx-2 my-8 text-white">
+                <i class="fa-brands text-2xl text-iconcolor fa-shopify"></i>
+                <h2 class="my-2 text-[18px]">Switch to shopify</h2>
+                <p>Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+            </div>
+
+            <div class="cards mx-2 my-8 text-white">
+                <i class="fa-solid text-2xl text-iconcolor fa-user-tie"></i>
+                <h2 class="my-2 text-[18px]">Hire a Shopify expert</h2>
+                <p>Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- section -->
+
+<section>
+    <div class="container mx-auto text-center p-4 sm:p-20">
+        <h1 class=" text-2xl mt-10 sm:text-4xl" >With you wherever you’re going</h1>
+        <p class="text-textsecondarycolor  lg:text-1xl my-4 xl:text-[1.6em] " >One platform with all the ecommerce and point of sale features <br class="sm:block hidden" > you need to start, run, and grow your business.</p>
+        
+        <div class="sell flex flex-col-reverse sm:flex-row mt-16 sm:mt-20">
+            <div class="left w-1/1 sm:w-1/2">
+                <video src="./assets/sell-animation-desktop.webm" autoplay loop ></video>
+            </div>
+            <div class="right w-1/1 sm:w-1/2 lg:py-8 xl:py-20 sm:pl-2 text-left">
+                <h1 class="text-2xl" >Sell everywhere</h1>
+                <p class=" my-6 lg:my-8 xl:my-12 lg:text-[1em] text-textsecondarycolor xl:text-[1.2em] " >Use one platform to sell products to anyone, anywhere—in person with Point of 
+                    Sale and online through your website, social media, and online marketplaces.
+                </p>
+                <h6 class="font-bold text-shopifygreen" >Explore ways to sell <span>&#x2192</span></h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section market -->
+
+<section>
+    <div class="container mx-auto text-center p-4 bg-offwhite sm:p-20 lg:py-0 ">
+        <div class="sell flex flex-col-reverse sm:flex-row-reverse mt-16 sm:mt-20 xl:4">
+            <div class="left w-1/1 sm:w-1/2">
+                <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg" >
+            </div>
+            <div class="right w-1/1 sm:w-1/2 lg:py-8 xl:py-20 sm:pl-2 text-left">
+                <h1 class="text-2xl" >Market your business</h1>
+                <p class=" my-6 lg:my-8 xl:my-12 lg:text-[1em] text-textsecondarycolor xl:text-[1.2em] " >Take the guesswork out of marketing with built-in tools that help <br class="sm:block hidden" > you create, execute, and analyze digital marketing campaigns.
+                </p>
+                <h6 class="font-bold text-shopifygreen" >Explore how to market your business <span>&#x2192</span></h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- section -->
+
+<section>
+    <div class="container mx-auto text-center p-4 bg-offwhite sm:p-20 lg:py-0 ">
+        <div class="sell flex flex-col-reverse sm:flex-row mt-16 sm:mt-20 xl:4">
+            <div class="left w-1/1 sm:w-1/2">
+                <video src="./assets/sell-animation-desktop.webm" autoplay loop ></video>
+            </div>
+            <div class="right w-1/1 sm:w-1/2 lg:py-8 xl:py-20 sm:pl-2 text-left">
+                <h1 class="text-2xl" >Manage everything</h1>
+                <p class=" my-6 lg:my-8 xl:my-12 lg:text-[1em] text-textsecondarycolor xl:text-[1.2em] " >Gain the insights you need to grow—use a single <br class="hidden sm:block" > dashboard to manage orders, shipping, and payments <br class="hidden sm:block" > anywhere you go.
+                </p>
+                <h6 class="font-bold text-shopifygreen" >Explore how to market your business <span>&#x2192</span></h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- section customer review -->
+
+<section>
+    <div class="container bg-shopifygreen mx-auto">
+        <div class="sell flex flex-col p-4 sm:flex-row mt-16 sm:mt-20 xl:p-8">
+            <div class="left w-1/1 sm:w-1/2">
+                <img class="bg-cover" src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@desktop-d947199e09069edaf78e332d87ba932b45805e3c91d032ba8a083a6f67ad04b5.jpg" alt="">
+            </div>
+            <div class="right w-1/1 sm:w-1/2 bg-myred flex flex-col lg:px-24 xl:px-32 text-white items-center py-10 justify-around text-center">
+                <p class=" text-1xl xl:text-3xl text-center font-bold " >“Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</p>
+                <img class=" w-[5em] lg:w-[7em] my-2 xl:w-[10em]" src="./assets/logo-alicia-souza-small.png" alt="">
+                <h6 class="text-2xl">Alicia | Alicia Souza</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section brands -->
+
+
+<section>
+    <div class="container mx-auto flex sm:flex-row items-center flex-wrap justify-between my-12 px-4 bg-offwhite flex-row flex-wrap">
+        <img class="m-6" src="./assets/bajaao-small.png" alt="">
+        <img class="m-6" src="./assets/johnjacobs-small.png" alt="">
+        <img class="m-6" src="./assets/kylie-small.png" alt="">
+        <img class="m-6" src="./assets/nush-small.png" alt="">
+        <img class="m-6" src="./assets/yogabar-small.png" alt="">
+        <img class="m-6" src="./assets/starstruck-small.png" alt="">
+        <img class="m-6" src="./assets/mcaffeine-small.png" alt="">
+    </div>
+</section>
 
 </body>
 </html>
